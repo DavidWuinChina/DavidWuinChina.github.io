@@ -1,1 +1,1 @@
-# Here is my English CV. | Just serach "DavidWuinChina.github.io" in the top of Web search box.
+# Here is my English CV. | Just search "DavidWuinChina.github.io" as normal website.
