@@ -94,7 +94,21 @@
 </section>
 
 <section>
+    
     <h2>Projects</h2>
+    <h3>Misunderstanding Association Prediction Model for Mathematical Multiple Choice Questions (Kaggle Silver Medal) (2024)</h3>
+    <p>Led the development of a natural language processing (NLP) model based on large language models (LLMs) that fine-tuned an LLM to retrieve and rearrange erroneous concepts in mathematical problems, facilitating automated matching of these concepts.</p >
+    <p>Utilized GPT-4o to generate supplementary training data to address the scarcity of annotated data. This step was crucial for enhancing the model's ability to understand and process mathematical language effectively.</p >
+    <p>Extracted key features from the mathematical problem text to construct training samples. This process ensured that the model learned from relevant data points that reflected common issues in mathematical problem-solving.</p >
+    <p>Employed a contrastive learning strategy based on the Qwen-14b/1932 model for finetuning. This approach helped the model differentiate between correct and incorrect concepts effectively.Implemented 4-bit quantization and LoRA (Low-Rank Adaptation) techniques to optimize model parameters, improving training efficiency and generalization ability.</p >
+    <p>In the retrieval and rearrangement stage, merged the embeddings of three heterogeneous LLMs for candidate retrieval. This multi-model approach enhanced the robustness of the retrieval process.Input the rearrangement statement into Qwen-32b-instruct-AWQ, utilizing its zero-shot capability to output new sorting statements. The top 25 results were processed in batches multiple times to refine the outputs.Simultaneously used bge-large- en-v1.5 to search the database using similarity measures to find the best results, ensuring that the model retrieved the most relevant information.</p>
+    
+    <h3>Implementation of Employee Backend Management System Based on Springboot3 and Vue3(2024)</h3>
+    <p>Developed a company employee management system using Java and JavaScript, which was divided into a front-end administrator, an employee information editing module, and a back-end data management module.</p >
+    <p>Vue 3 and Element Plus component libraries served as front-end frameworks, while Spring Boot 3 and MyBatis served as back-end frameworks. The front-end utilized the Element Plus component library to build the UI interface.</p >
+    <p>The WangEditor 5 rich text editor was used to facilitate text editing and content creation for users. The backend database design included multiple data tables for employee information. The system implemented management and design fields related to multiple department employees.</p >
+    <p>Additionally, multiple interfaces were designed to handle basic functions such as data analysis, user management, personal information editing, and password modification. Extra functions such as file upload and batch import/export of data were also implemented. Information visualization of data statistics tables was achieved through the Apache ECharts chart library.</p >
+
     <h3>Research and Application of Clustering Algorithms (2023)</h3>
     <p>Introduced the principles of common clustering algorithms, including K-means, Density Based Spatial Clustering of Applications with Noise (DBSCAN), AGglomerative NESting (AGNES),Self-organizing map (SMO) and Gaussian Mixture Model (GMM).</p >
     <p>Used algorithms to analyze the wine quality data, poll data, sale data of customers, and basketball player data with R, and obtained rational clustering results.</p >
@@ -106,11 +120,7 @@
     <p>Conducted differentiate operation, drew a first-order differential sequence diagram, and evaluated the stability of the sequence.</p >
     <p>Applied self-defined functions to calculate the optimal order, used ARIMA() for parameter estimation, and performed a test of significance with self-defined t-test functions.</p >
     <p>Tested ARIMA model with tsdiag() and employed the model to predict the price trend in the next six months and evaluate the short-term investment value of the stock.</p >
-    
-    <h3>Study on the Maximization of Network Influence (2022)</h3>
-    <p>Studied network collapse strategies by identifying key nodes and edges in various network structures, with applications in disintegrating harmful networks such as terrorist networks and disease transmission networks.</p >
-    <p>Used JAVA and MyEclipse and applied the information diffusion model and greedy-choice strategy to build an Influence Diffusion Model, write programs, implement the reading of txt data files, activate nodes, calculate the influence, and export functions.</p >
-    
+
 </section>
 
 <footer>
