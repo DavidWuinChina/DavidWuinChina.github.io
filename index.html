@@ -70,9 +70,9 @@
 
         ul {
 
-            list-style-type: none;
+            list-style-type: disc;
 
-            padding: 0;
+            padding-left: 20px;
 
         }
 
@@ -124,7 +124,7 @@
 
     <h2>About Me</h2>
 
-    <p>I am a passionate AI engineer specializing in Retrieval-Augmented Generation (RAG) systems, with strong expertise in large language models, prompt engineering, and full-stack AI development. Experienced in both academic research and industry production environments.</p>
+    <p>I am a dedicated AI engineer currently working as a RAG Engineer at Hong Kong Generative AI Research and Development Center Limited, an organization affiliated with the Hong Kong University of Science and Technology (HKUST). I specialize in Retrieval-Augmented Generation (RAG) systems, with hands-on experience in large language models, prompt engineering, agent frameworks, multimodal evaluation, and production deployment.</p>
 
 </section>
 
@@ -150,9 +150,9 @@
 
         <li><strong>Programming Languages:</strong> Python, R, Java, Rust</li>
 
-        <li><strong>AI/ML Frameworks:</strong> PyTorch, LangChain, LlamaIndex, FastAPI, HuggingFace</li>
+        <li><strong>AI/ML Frameworks:</strong> PyTorch, LangChain, LlamaIndex, FastAPI, HuggingFace, VLLM</li>
 
-        <li><strong>Technical Tools:</strong> RAG systems, Prompt Engineering, LLM Fine-tuning, Vector DB, Cloud Deployment (Huawei Cloud)</li>
+        <li><strong>Technical Expertise:</strong> RAG Systems, Prompt Engineering, ReAct + Reflection Agent Framework, Streaming Output, Multimodal Benchmarking, Cloud Deployment (Huawei Cloud)</li>
 
         <li><strong>Languages:</strong> Mandarin (Native), English (IELTS 6.5)</li>
 
@@ -168,19 +168,17 @@
 
     
 
-    <h3>Hong Kong Generative AI Research and Development Center Limited (affiliated with HKUST) <span class="job-title">RAG Engineer</span> (2025.03 - Present)</h3>
+    <h3>Hong Kong Generative AI Research and Development Center Limited (affiliated with HKUST) <span class="job-title">RAG Engineer</span> (2025.10 - Present)</h3>
 
     <ul>
 
-        <li>Developed and optimized core RAG systems for the company's flagship product "港话通", including RagQA and knowledge platform ES interface development.</li>
+        <li>Developed core RAG modules for the "港话通" product, including RagQA and knowledge platform ES interface; implemented dynamic prompt construction based on strategies and models, official data building, and dynamic prompt invocation logic.</li>
 
-        <li>Led UltraRAG enhancements: implemented streaming output, Multi-Search retrieval framework, and government-related search optimization, achieving ~82% accuracy on evaluation sets while significantly reducing tool calls and latency in high-concurrency scenarios.</li>
+        <li>Enhanced UltraRAG with streaming output (intermediate and final results), added Multi-Search to the retrieval framework, and optimized government-related searches. Achieved ~82% accuracy on search and official Q&A evaluations; reduced tool calls significantly while maintaining performance and enabled language migration and response format optimization.</li>
 
-        <li>Reconstructed Agentic RAG based on ReAct + Reflection framework; independently handled streaming output, automated deployment, degradation strategies, and multi-language (Traditional Chinese/English) support. Improved effective answer rate by 8.3% (273→299 on 300 real user queries) and enhanced timeliness and response richness per LLM Judge evaluation.</li>
+        <li>Reconstructed Agentic RAG using ReAct + Reflection framework; collaborated with team members on pipeline and language-following development, independently handled streaming output, automated deployment, degradation/compatibility strategies, and multi-language support (Traditional Chinese/English). Improved effective answer rate by 8.3% (273→299 on 300 real queries) with LLM Judge GSB score of 185:61:54. Configured deployment files and worked with Ops team to deploy on Huawei Cloud dev environment as API service; current setup stable with frontend Agent button added.</li>
 
-        <li>Deployed Agentic RAG on Huawei Cloud: configured YAML and environment variables, collaborated with Ops team for dev environment setup, implemented streaming message passthrough and alerting degradation strategies; successfully provided stable API services to frontend.</li>
-
-        <li>Conducted Interleave RAG research: deployed and benchmarked 7 multimodal models on 5 VQA datasets to support future image-text interleaved capabilities.</li>
+        <li>Led Interleave RAG research: deployed Qwen-series vision-language models, reproduced paper benchmarks, evaluated SFT/RL-enhanced versions, and conducted Ragflow process evaluations and ablation studies.</li>
 
     </ul>
 
@@ -218,51 +216,25 @@
 
     <h3>Misunderstanding Association Prediction Model for Mathematical Multiple Choice Questions (Kaggle Silver Medal) (2024)</h3>
 
-    <p>Led the development of a natural language processing (NLP) model based on large language models (LLMs) that fine-tuned an LLM to retrieve and rearrange erroneous concepts in mathematical problems, facilitating automated matching of these concepts.</p>
-
-    <p>Utilized GPT-4o to generate supplementary training data to address the scarcity of annotated data. This step was crucial for enhancing the model's ability to understand and process mathematical language effectively.</p>
-
-    <p>Extracted key features from the mathematical problem text to construct training samples. This process ensured that the model learned from relevant data points that reflected common issues in mathematical problem-solving.</p>
-
-    <p>Employed a contrastive learning strategy based on the Qwen-14b/1932 model for fine-tuning. This approach helped the model differentiate between correct and incorrect concepts effectively. Implemented 4-bit quantization and LoRA (Low-Rank Adaptation) techniques to optimize model parameters, improving training efficiency and generalization ability.</p>
-
-    <p>In the retrieval and rearrangement stage, merged the embeddings of three heterogeneous LLMs for candidate retrieval. This multi-model approach enhanced the robustness of the retrieval process. Input the rearrangement statement into Qwen-32b-instruct-AWQ, utilizing its zero-shot capability to output new sorting statements. The top 25 results were processed in batches multiple times to refine the outputs. Simultaneously used bge-large-en-v1.5 to search the database using similarity measures to find the best results.</p>
+    <p>Led development of an LLM-based NLP model for retrieving and rearranging erroneous concepts in math problems. Used GPT-4o for data augmentation, contrastive learning on Qwen-14b with LoRA/4-bit quantization, multi-LLM embedding fusion, and zero-shot rearrangement with Qwen-32b.</p>
 
     
 
-    <h3>Implementation of Employee Backend Management System Based on Springboot3 and Vue3 (2024)</h3>
+    <h3>Employee Backend Management System (Spring Boot 3 + Vue 3) (2024)</h3>
 
-    <p>Developed a company employee management system using Java and JavaScript, which was divided into a front-end administrator, an employee information editing module, and a back-end data management module.</p>
-
-    <p>Vue 3 and Element Plus component libraries served as front-end frameworks, while Spring Boot 3 and MyBatis served as back-end frameworks. The front-end utilized the Element Plus component library to build the UI interface.</p>
-
-    <p>The WangEditor 5 rich text editor was used to facilitate text editing and content creation for users. The backend database design included multiple data tables for employee information. The system implemented management and design fields related to multiple department employees.</p>
-
-    <p>Additionally, multiple interfaces were designed to handle basic functions such as data analysis, user management, personal information editing, and password modification. Extra functions such as file upload and batch import/export of data were also implemented. Information visualization of data statistics tables was achieved through the Apache ECharts chart library.</p>
+    <p>Built full-stack employee management system with Vue 3 + Element Plus frontend and Spring Boot 3 + MyBatis backend. Features included rich text editing, multi-table DB design, file upload, batch operations, user management, and ECharts visualization.</p>
 
     
 
-    <h3>Research and Application of Clustering Algorithms (2023)</h3>
+    <h3>Clustering Algorithms Research and Application (2023)</h3>
 
-    <p>Introduced the principles of common clustering algorithms, including K-means, DBSCAN, AGNES, SOM and GMM.</p>
-
-    <p>Used algorithms to analyze wine quality, poll, customer sales, and basketball player datasets with R, obtaining reasonable clustering results.</p>
-
-    <p>Provided extensive visualizations and repeatedly applied Multidimensional Scaling (MDS) for dimensionality reduction to display clustering results in 2D.</p>
-
-    <p>Applied K-means in RStudio to cluster NBA 2022-2023 regular season players with >300 minutes played, reduced 25-dimensional data to 6 principal components (e.g., “ball-handling attack”, “scoring efficiency”), and grouped 407 players into 10 clusters such as “ball-dominant core”, “team commander”, and “interior blue-collar”, providing a novel research perspective.</p>
+    <p>Implemented and compared K-means, DBSCAN, AGNES, SOM, GMM in R on multiple datasets. Applied PCA/MDS for visualization; clustered NBA 2022-2023 players into 10 meaningful roles.</p>
 
     
 
-    <h3>Stock Price Prediction Based on ARIMA Time Series Model (2022)</h3>
+    <h3>Stock Price Prediction with ARIMA (2022)</h3>
 
-    <p>Utilized RStudio to analyze monthly closing prices of Hisense Home Appliances (000921) over 29 months.</p>
-
-    <p>Performed differencing, drew first-order difference plots, and assessed sequence stationarity.</p>
-
-    <p>Used custom functions to determine optimal order, estimated parameters with ARIMA(), and conducted significance tests.</p>
-
-    <p>Diagnosed model with tsdiag() and forecasted price trends for the next six months to evaluate short-term investment value.</p>
+    <p>Analyzed and forecasted Hisense Home Appliances stock prices using ARIMA in RStudio, including stationarity testing, parameter estimation, and short-term trend prediction.</p>
 
 </section>
 
