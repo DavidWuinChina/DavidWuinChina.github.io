@@ -1,131 +1,277 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wu Yile - Data Scientist</title>
+
+    <title>David Wu - RAG Engineer</title>
+
     <style>
+
         body {
+
             font-family: Arial, sans-serif;
+
             margin: 0;
+
             padding: 0;
+
             background-color: #f4f4f4;
+
         }
+
         header {
+
             background-color: #333;
+
             color: white;
+
             text-align: center;
+
             padding: 1em 0;
+
         }
+
         header h1 {
+
             margin: 0;
+
         }
+
         section {
+
             margin: 20px;
+
             padding: 20px;
+
             background-color: white;
+
             border-radius: 8px;
+
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
         }
+
         h2 {
+
             color: #333;
+
         }
+
+        h3 {
+
+            margin-bottom: 8px;
+
+        }
+
         ul {
+
             list-style-type: none;
+
             padding: 0;
+
         }
+
         ul li {
+
             padding: 5px 0;
+
         }
+
+        .job-title {
+
+            font-style: italic;
+
+            color: #555;
+
+        }
+
         footer {
+
             text-align: center;
+
             margin-top: 20px;
+
             padding: 10px;
+
             background-color: #333;
+
             color: white;
+
         }
+
     </style>
+
 </head>
+
 <body>
 
 <header>
-    <h1>David Wu - Data Scientist</h1>
-    <p>Master's Student at Hong Kong University of Science and Technology</p >
-    <p>Email: ywuhr@connect.ust.hk | Phone: +13955549477</p >
+
+    <h1>David Wu - RAG Engineer</h1>
+
+    <p>MSc Graduate, Hong Kong University of Science and Technology</p>
+
+    <p>Email: wuyile@ust.hk | Phone: +86 13955549477</p>
+
 </header>
 
 <section>
+
     <h2>About Me</h2>
-    <p>I am a passionate data-driven modeling researcher with a solid foundation in statistics, data structures, and scientific programming. Skilled in Python and R, with experience in both academic and corporate settings.</p >
+
+    <p>I am a passionate AI engineer specializing in Retrieval-Augmented Generation (RAG) systems, with strong expertise in large language models, prompt engineering, and full-stack AI development. Experienced in both academic research and industry production environments.</p>
+
 </section>
 
 <section>
+
     <h2>Education</h2>
+
     <ul>
-        <li><strong>Master of Science (in progress)</strong> - Hong Kong University of Science and Technology (2024.09 - present)</li>
+
+        <li><strong>Master of Science</strong> - Hong Kong University of Science and Technology (2024.09 - 2025.10)</li>
+
         <li><strong>Bachelor of Science in Statistics</strong> - Shandong University (2019.09 - 2023.06)</li>
+
     </ul>
+
 </section>
 
 <section>
+
     <h2>Skills</h2>
+
     <ul>
+
         <li><strong>Programming Languages:</strong> Python, R, Java, Rust</li>
-        <li><strong>Technical Tools:</strong> Data Analysis Software</li>
+
+        <li><strong>AI/ML Frameworks:</strong> PyTorch, LangChain, LlamaIndex, FastAPI, HuggingFace</li>
+
+        <li><strong>Technical Tools:</strong> RAG systems, Prompt Engineering, LLM Fine-tuning, Vector DB, Cloud Deployment (Huawei Cloud)</li>
+
         <li><strong>Languages:</strong> Mandarin (Native), English (IELTS 6.5)</li>
+
         <li><strong>Hobbies:</strong> Basketball, Singing</li>
+
     </ul>
+
 </section>
 
 <section>
-    <h2>Internship Experience</h2>
-    <h3>375 Technology Co., Ltd. (2024.11 - 2025.02)</h3>
-    <ul>
-        <li>Developed backend systems for digital asset and Web3 projects using FastAPI, integrating APIs from platforms like Scroll and Solana to scan blockchain data, filtering transaction data, storing it in databases, and creating APIs for frontend consumption.</li>
-        <li>Analyzed transaction data from blockchain scans using Python, visualizing trends to support decision-making.</li>
-        <li>Designed and backtested quantitative trading strategies, evaluating performance using metrics such as Sharpe ratio, Calmar ratio, and maximum drawdown.</li>
-    </ul>
+
+    <h2>Work Experience</h2>
+
     
-    <h3>Weichai Power Co., Ltd. (2023.07 - 2024.03)</h3>
+
+    <h3>Hong Kong Generative AI Research and Development Center Limited (affiliated with HKUST) <span class="job-title">RAG Engineer</span> (2025.03 - Present)</h3>
+
     <ul>
-        <li>Mastered company products and production process.Aligned with production, sales, finance and other businesses to carry out projects by using SQL,Fine Bi, Python.</li>
-        <li>Performed data analysis and visualization and provided improvement suggestions.</li>
+
+        <li>Developed and optimized core RAG systems for the company's flagship product "港话通", including RagQA and knowledge platform ES interface development.</li>
+
+        <li>Led UltraRAG enhancements: implemented streaming output, Multi-Search retrieval framework, and government-related search optimization, achieving ~82% accuracy on evaluation sets while significantly reducing tool calls and latency in high-concurrency scenarios.</li>
+
+        <li>Reconstructed Agentic RAG based on ReAct + Reflection framework; independently handled streaming output, automated deployment, degradation strategies, and multi-language (Traditional Chinese/English) support. Improved effective answer rate by 8.3% (273→299 on 300 real user queries) and enhanced timeliness and response richness per LLM Judge evaluation.</li>
+
+        <li>Deployed Agentic RAG on Huawei Cloud: configured YAML and environment variables, collaborated with Ops team for dev environment setup, implemented streaming message passthrough and alerting degradation strategies; successfully provided stable API services to frontend.</li>
+
+        <li>Conducted Interleave RAG research: deployed and benchmarked 7 multimodal models on 5 VQA datasets to support future image-text interleaved capabilities.</li>
+
     </ul>
+
+    
+
+    <h3>375 Technology Co., Ltd. <span class="job-title">Backend Development Intern</span> (2024.11 - 2025.02)</h3>
+
+    <ul>
+
+        <li>Developed backend systems for digital asset and Web3 projects using FastAPI, integrating APIs from platforms like Scroll and Solana to scan blockchain data, filter transactions, store in databases, and expose APIs for frontend.</li>
+
+        <li>Analyzed blockchain transaction data with Python and visualized trends to support business decisions.</li>
+
+        <li>Designed and backtested quantitative trading strategies, evaluating performance using Sharpe ratio, Calmar ratio, and maximum drawdown.</li>
+
+    </ul>
+
+    
+
+    <h3>Weichai Power Co., Ltd. <span class="job-title">Data Analyst</span> (2023.07 - 2024.03)</h3>
+
+    <ul>
+
+        <li>Mastered company products and production processes; collaborated with production, sales, and finance teams to drive projects using SQL, FineBI, and Python.</li>
+
+        <li>Conducted data analysis and visualization, providing actionable improvement recommendations.</li>
+
+    </ul>
+
 </section>
 
 <section>
-    
+
     <h2>Projects</h2>
+
     <h3>Misunderstanding Association Prediction Model for Mathematical Multiple Choice Questions (Kaggle Silver Medal) (2024)</h3>
-    <p>Led the development of a natural language processing (NLP) model based on large language models (LLMs) that fine-tuned an LLM to retrieve and rearrange erroneous concepts in mathematical problems, facilitating automated matching of these concepts.</p >
-    <p>Utilized GPT-4o to generate supplementary training data to address the scarcity of annotated data. This step was crucial for enhancing the model's ability to understand and process mathematical language effectively.</p >
-    <p>Extracted key features from the mathematical problem text to construct training samples. This process ensured that the model learned from relevant data points that reflected common issues in mathematical problem-solving.</p >
-    <p>Employed a contrastive learning strategy based on the Qwen-14b/1932 model for finetuning. This approach helped the model differentiate between correct and incorrect concepts effectively.Implemented 4-bit quantization and LoRA (Low-Rank Adaptation) techniques to optimize model parameters, improving training efficiency and generalization ability.</p >
-    <p>In the retrieval and rearrangement stage, merged the embeddings of three heterogeneous LLMs for candidate retrieval. This multi-model approach enhanced the robustness of the retrieval process.Input the rearrangement statement into Qwen-32b-instruct-AWQ, utilizing its zero-shot capability to output new sorting statements. The top 25 results were processed in batches multiple times to refine the outputs.Simultaneously used bge-large- en-v1.5 to search the database using similarity measures to find the best results, ensuring that the model retrieved the most relevant information.</p>
+
+    <p>Led the development of a natural language processing (NLP) model based on large language models (LLMs) that fine-tuned an LLM to retrieve and rearrange erroneous concepts in mathematical problems, facilitating automated matching of these concepts.</p>
+
+    <p>Utilized GPT-4o to generate supplementary training data to address the scarcity of annotated data. This step was crucial for enhancing the model's ability to understand and process mathematical language effectively.</p>
+
+    <p>Extracted key features from the mathematical problem text to construct training samples. This process ensured that the model learned from relevant data points that reflected common issues in mathematical problem-solving.</p>
+
+    <p>Employed a contrastive learning strategy based on the Qwen-14b/1932 model for fine-tuning. This approach helped the model differentiate between correct and incorrect concepts effectively. Implemented 4-bit quantization and LoRA (Low-Rank Adaptation) techniques to optimize model parameters, improving training efficiency and generalization ability.</p>
+
+    <p>In the retrieval and rearrangement stage, merged the embeddings of three heterogeneous LLMs for candidate retrieval. This multi-model approach enhanced the robustness of the retrieval process. Input the rearrangement statement into Qwen-32b-instruct-AWQ, utilizing its zero-shot capability to output new sorting statements. The top 25 results were processed in batches multiple times to refine the outputs. Simultaneously used bge-large-en-v1.5 to search the database using similarity measures to find the best results.</p>
+
     
-    <h3>Implementation of Employee Backend Management System Based on Springboot3 and Vue3(2024)</h3>
-    <p>Developed a company employee management system using Java and JavaScript, which was divided into a front-end administrator, an employee information editing module, and a back-end data management module.</p >
-    <p>Vue 3 and Element Plus component libraries served as front-end frameworks, while Spring Boot 3 and MyBatis served as back-end frameworks. The front-end utilized the Element Plus component library to build the UI interface.</p >
-    <p>The WangEditor 5 rich text editor was used to facilitate text editing and content creation for users. The backend database design included multiple data tables for employee information. The system implemented management and design fields related to multiple department employees.</p >
-    <p>Additionally, multiple interfaces were designed to handle basic functions such as data analysis, user management, personal information editing, and password modification. Extra functions such as file upload and batch import/export of data were also implemented. Information visualization of data statistics tables was achieved through the Apache ECharts chart library.</p >
+
+    <h3>Implementation of Employee Backend Management System Based on Springboot3 and Vue3 (2024)</h3>
+
+    <p>Developed a company employee management system using Java and JavaScript, which was divided into a front-end administrator, an employee information editing module, and a back-end data management module.</p>
+
+    <p>Vue 3 and Element Plus component libraries served as front-end frameworks, while Spring Boot 3 and MyBatis served as back-end frameworks. The front-end utilized the Element Plus component library to build the UI interface.</p>
+
+    <p>The WangEditor 5 rich text editor was used to facilitate text editing and content creation for users. The backend database design included multiple data tables for employee information. The system implemented management and design fields related to multiple department employees.</p>
+
+    <p>Additionally, multiple interfaces were designed to handle basic functions such as data analysis, user management, personal information editing, and password modification. Extra functions such as file upload and batch import/export of data were also implemented. Information visualization of data statistics tables was achieved through the Apache ECharts chart library.</p>
+
+    
 
     <h3>Research and Application of Clustering Algorithms (2023)</h3>
-    <p>Introduced the principles of common clustering algorithms, including K-means, Density Based Spatial Clustering of Applications with Noise (DBSCAN), AGglomerative NESting (AGNES),Self-organizing map (SMO) and Gaussian Mixture Model (GMM).</p >
-    <p>Used algorithms to analyze the wine quality data, poll data, sale data of customers, and basketball player data with R, and obtained rational clustering results.</p >
-    <p>Provided a large volume of visual displays and employed Multidimensional Scaling (MDS) repeatedly for dimensionality reduction to enable multidimensional data to present clustering visualization results in a 2D plane.</p >
-    <p>Applied K-means and RStudio to cluster all players with more than 300 minutes of playing time in NBA 2022-2023 regular season, reduced 25-dimensional data to 6-dimensional data through principal component analysis, namely 6 principal components such as “attack with ball” and “scoring efficiency”, and gathered 407 players into 10 clusters, such as “holding large nuclear”, “team commander” and “inside blue-collar player”, offering a novel angle to the research.</p >
 
-    <h3>Stock Price Prediction Based on the Time Series Model ARIMA Model (2022)</h3>
-    <p>Utilized RStudio to analyze the data of Hisense Home Appliances (000921) concerning its closing prices of the last days of 29 months.</p >
-    <p>Conducted differentiate operation, drew a first-order differential sequence diagram, and evaluated the stability of the sequence.</p >
-    <p>Applied self-defined functions to calculate the optimal order, used ARIMA() for parameter estimation, and performed a test of significance with self-defined t-test functions.</p >
-    <p>Tested ARIMA model with tsdiag() and employed the model to predict the price trend in the next six months and evaluate the short-term investment value of the stock.</p >
+    <p>Introduced the principles of common clustering algorithms, including K-means, DBSCAN, AGNES, SOM and GMM.</p>
+
+    <p>Used algorithms to analyze wine quality, poll, customer sales, and basketball player datasets with R, obtaining reasonable clustering results.</p>
+
+    <p>Provided extensive visualizations and repeatedly applied Multidimensional Scaling (MDS) for dimensionality reduction to display clustering results in 2D.</p>
+
+    <p>Applied K-means in RStudio to cluster NBA 2022-2023 regular season players with >300 minutes played, reduced 25-dimensional data to 6 principal components (e.g., “ball-handling attack”, “scoring efficiency”), and grouped 407 players into 10 clusters such as “ball-dominant core”, “team commander”, and “interior blue-collar”, providing a novel research perspective.</p>
+
+    
+
+    <h3>Stock Price Prediction Based on ARIMA Time Series Model (2022)</h3>
+
+    <p>Utilized RStudio to analyze monthly closing prices of Hisense Home Appliances (000921) over 29 months.</p>
+
+    <p>Performed differencing, drew first-order difference plots, and assessed sequence stationarity.</p>
+
+    <p>Used custom functions to determine optimal order, estimated parameters with ARIMA(), and conducted significance tests.</p>
+
+    <p>Diagnosed model with tsdiag() and forecasted price trends for the next six months to evaluate short-term investment value.</p>
 
 </section>
 
 <footer>
-    <p>&copy; 2024 David Wu. All Rights Reserved.</p >
+
+    <p>&copy; 2026 David Wu. All Rights Reserved.</p>
+
 </footer>
 
 </body>
+
 </html>
